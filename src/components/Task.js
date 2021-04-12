@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Task = ({ task }) => {
   return (
     <div className='task'>
@@ -6,5 +8,9 @@ const Task = ({ task }) => {
     </div>
   )
 };
+
+Task.propTypes = {
+  task: PropTypes.object,
+}
 
 export default Task;
